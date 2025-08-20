@@ -60,8 +60,6 @@ function serve(done) {
 }
 
 const ghPages = require('gulp-gh-pages');
-const gulp = require('gulp');
-
 gulp.task('deploy', function () {
   return gulp.src('./dist/**/*')
     .pipe(ghPages({
