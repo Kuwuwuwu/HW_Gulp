@@ -79,3 +79,6 @@ exports.pug = compilePug;
 exports.scripts = scripts;
 exports.serve = gulp.series(clean, styles, compilePug, scripts, serve);
 exports.build = gulp.series(clean, styles, compilePug, scripts);
+
+
+ech// временное изменение
