@@ -1,0 +1,24 @@
+// inner.scss — стилі для внутрішніх сторінок або секцій
+
+.inner {
+  padding: 40px 0;
+
+  &__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #111;
+  }
+
+  &__text {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+  }
+}

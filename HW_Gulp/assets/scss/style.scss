@@ -1,0 +1,8 @@
+@import 'common';
+@import 'header';
+@import 'subfolder/inner';
+
+body {
+  font-family: sans-serif;
+  background-color: cornflowerblue;
+}
