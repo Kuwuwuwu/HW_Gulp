@@ -60,11 +60,19 @@ function serve(done) {
 }
 
 const ghPages = require('gulp-gh-pages');
+const gulp = require('gulp');
+
 gulp.task('deploy', function () {
   return gulp.src('./dist/**/*')
-    .pipe(ghPages());
+    .pipe(ghPages({
+      message: 'Deploy via gulp',
+      user: {
+        name: 'Marharyta',
+        email: 'nasty22kot@gmail.com'
+      }
+    }));
 });
- 
+
 
 // Экспорт задач
 exports.clean = clean;
