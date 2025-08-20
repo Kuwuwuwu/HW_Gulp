@@ -69,6 +69,10 @@ gulp.task('deploy', function () {
         email: 'nasty22kot@gmail.com'
       }
     }));
+    if (!commits || commits.length === 0) {
+  console.log("Нет коммитов. Пропускаем деплой.");
+  return;
+}
 });
 
 
