@@ -59,6 +59,13 @@ function serve(done) {
     done(); // сигнал завершення
 }
 
+const ghPages = require('gulp-gh-pages');
+gulp.task('deploy', function () {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
+ 
+
 // Экспорт задач
 exports.clean = clean;
 exports.styles = styles;
