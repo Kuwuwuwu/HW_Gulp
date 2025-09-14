@@ -1,16 +1,18 @@
 {
   "name": "hw_gulp",
   "version": "1.0.0",
+  "description": "",
+  "homepage": "https://Kuwuwuwu.github.io/HW_Gulp",
   "main": "index.js",
   "scripts": {
     "build": "gulp build",
     "serve": "gulp serve",
-    "dev": "gulp serve --watch"
+    "dev": "gulp serve --watch",
+    "deploy": "gulp deploy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "browser-sync": "^3.0.4",

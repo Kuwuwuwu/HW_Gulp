@@ -67,11 +67,9 @@ function serve() {
 function deploy() {
   return src("./dist/**/*")
     .pipe(ghPages({
-      message: "Deploy via gulp",
-      user: {
-        name: "Marharyta",
-        email: "nasty22kot@gmail.com"
-      }
+      remoteUrl: "https://Kuwuwuwu.github.io/HW_Gulp",
+      branch: "gh-pages",
+      message: "Deploy via gulp-gh-pages"
     }));
 }
 
