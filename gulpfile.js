@@ -36,9 +36,9 @@ function styles() {
 
 // Pug → HTML
 function compilePug() {
-  return src("templates/**/*.pug")
+  return src("templates/index.pug")
     .pipe(plumber())
-    .pipe(pug({ pretty: true }))
+    .pipe(pug({ pretty: true, basedir: "templates" }))
     .pipe(dest("dist"))
     .pipe(browserSync.stream());
 }
